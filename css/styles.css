@@ -104,6 +104,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--second-title-color);
 }
+.header-coordinates {
+  margin-left: auto;
+}
 .header-contact {
   display: flex;
 }
@@ -118,6 +121,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--first-text-color);
 }
+.header-mail-icon,
+.header-mob-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
@@ -129,12 +137,6 @@ img {
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
-}
-.header-mail-icon,
-.header-mob-icon {
-  fill: currentColor;
-  order: -1;
-  margin-right: 10px;
 }
 .logo {
   font-family: Raleway;
@@ -392,6 +394,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
 .footer-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -494,6 +500,8 @@ img {
 .projects-button:focus {
   background-color: var(--accent-color);
   color: var(--first-button-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 /*-------------------NAME LIST-----------------*/
 .name-list {
@@ -508,6 +516,12 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.name-item:hover,
+.name-item:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .name-div {
   padding: 20px 24px 20px 24px;
